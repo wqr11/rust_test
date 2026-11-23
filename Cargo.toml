@@ -3,6 +3,14 @@ name = "rust_test"
 version = "0.1.0"
 edition = "2024"
 
+[[bin]]
+name = "game"
+path = "src/bin/game/main.rs"
+
+[[bin]]
+name = "test"
+path = "src/bin/test/main.rs"
+
 [dependencies]
 
 [build]
