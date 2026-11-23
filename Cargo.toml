@@ -1,0 +1,14 @@
+[package]
+name = "rust_test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[build]
+rustflags = "-Zthreads=8"
+
+[profile.dev]
+incremental = true
+
+[profile.release]
