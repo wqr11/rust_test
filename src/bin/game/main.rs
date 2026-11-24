@@ -1,6 +1,7 @@
 use std::{
     io::Read,
     net::{TcpListener, TcpStream},
+    thread,
 };
 
 fn handle_connection(mut conn: TcpStream) -> () {
@@ -14,7 +15,10 @@ fn handle_connection(mut conn: TcpStream) -> () {
 }
 
 fn main() {
-    let tcp = TcpListener::bind("0.0.0.0:9999").expect("Counldn't bind to port ::9999");
+    let tcp = TcpListener::bind("0.0.0.0:9999").unwrap();
+    let max_threads = thread::available_parallelism().unwrap();
+
+    for t in 0_usize..max_threads {}
 
     println!("Running at 0.0.0.0:9999");
 

@@ -11,6 +11,22 @@ path = "src/bin/game/main.rs"
 name = "test"
 path = "src/bin/test/main.rs"
 
+[[bin]]
+name = "ll"
+path = "src/bin/linked_list/main.rs"
+
+[[bin]]
+name = "frominto"
+path = "src/bin/from-into/main.rs"
+
+[[bin]]
+name = "loops"
+path = "src/bin/loops/main.rs"
+
+[[bin]]
+name = "match"
+path = "src/bin/match/main.rs"
+
 [dependencies]
 
 [build]
